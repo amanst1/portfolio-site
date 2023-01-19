@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/* Custom Props */
+
 :root{
     --ff-primary: 'Source Sans Pro', sans-serif;
     --ff-secondary: 'Source Code Pro', monospace;
@@ -21,3 +23,28 @@
     --fs-body: 1 rem;
 }
 
+@media (min-width: 800px) {
+    :root {
+        --fs-h1: 4.5 rem;
+        --fs-h2: 3.75 rem;
+        --fs-h3: 1.5 rem;
+        --fs-body: 1.125 rem;
+    }
+}
+
+
+/* General Props */
+
+body {
+    margin: 0;
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
